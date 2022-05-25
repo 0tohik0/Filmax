@@ -370,7 +370,7 @@ html {
 }
 
 .container {
-  max-width: 72.5rem;
+  max-width: 66.625rem;
   width: 100%;
   margin: auto;
   display: flex;
@@ -382,21 +382,77 @@ a {
   text-decoration: none;
 }
 
+.button {
+  border: none;
+  font-family: RalewaySemiBold;
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-primary {
+  background: #212121;
+  border-radius: 40px;
+}
+
+.header {
+  background: url("../img/gradient.png") no-repeat center/cover;
+}
+
 .header-container {
   padding-top: 2.25rem;
   align-items: center;
 }
 
-.header-logo {
-  padding-right: 80px;
+.header-icons__item {
+  margin-right: 1.5625rem;
 }
 
-.header-menu {
+.header-icons__item:last-child {
+  margin-right: 0;
+}
+
+.header .nav {
   display: flex;
-}
-
-a {
+  align-items: center;
+  justify-content: space-between;
   font-family: RalewayMedium;
   font-weight: bold;
+  margin-right: 20.5rem;
+}
+
+.header .nav__item {
+  align-items: center;
+  margin-right: 1.875rem;
+}
+
+.header .nav__item:last-child {
+  margin-right: 0;
+}
+
+.header .section {
+  padding: 3.5rem 0 6.625rem 0;
+}
+
+.header .promo-text {
+  margin-top: 9.5rem;
+}
+
+.header .promo-text__title {
+  max-width: 41.5625rem;
+  font-size: 2.875rem;
+  margin-bottom: 1.25rem;
+  line-height: 3.75rem;
+}
+
+.header .promo-text__desc {
+  max-width: 40rem;
+  font-size: 1.375rem;
+  margin-bottom: 50px;
+  line-height: 31px;
+}
+
+.header .promo-text__button {
+  padding: 1.25rem 3.125rem;
 }
 /*# sourceMappingURL=style.css.map */

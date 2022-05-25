@@ -1,12 +1,39 @@
 .header
+    background: url('../img/gradient.png') no-repeat center / cover
     &-container
         padding-top: 2.25rem
         align-items: center
-    &-logo
-        padding-right: 80px
-    &-menu
+    &-icons
+        &__item
+            margin-right: 1.5625rem
+            &:last-child
+                margin-right: 0     
+    .nav 
         display: flex
-a
-    font-family: RalewayMedium
-    font-weight: bold
-    
+        align-items: center
+        justify-content: space-between
+        font-family: RalewayMedium
+        font-weight: bold
+        margin-right: 20.5rem
+        &__item
+            align-items: center
+            margin-right: 1.875rem
+            &:last-child
+                margin-right: 0
+    .section
+        padding: 3.5rem 0 6.625rem 0
+    .promo
+        &-text
+            margin-top: 9.5rem
+            &__title
+                max-width: 41.5625rem
+                font-size: 2.875rem
+                margin-bottom: 1.25rem
+                line-height: 3.75rem
+            &__desc
+                max-width: 40rem
+                font-size: 1.375rem
+                margin-bottom: 50px
+                line-height: 31px
+            &__button
+                padding: 1.25rem 3.125rem
