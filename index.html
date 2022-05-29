@@ -4,230 +4,267 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Filmax</title>
 </head>
 <body>
-<main>
     <header class="header">
-        <div class="container header-container">
-            <div class="header-logo">
-                <a href="index.html" class="logo__link"><img src="./img/logotype.svg" alt="Логотип" class="logo"></a>
-            </div>
-            <nav class="nav menu__nav">
-                <a href="#" class="nav__item">Камеры</a>
-                <a href="#" class="nav__item">Принтеры</a>
-                <a href="#" class="nav__item">Аксессуары</a>
-                <a href="#" class="nav__item">Поддержка</a>
-            </nav>
-            <div class="header-icons">
-                <a href="#" class="header-icons__item">
-                    <img src="./img/search.svg" alt="search">
-                </a>
-                <a href="#" class="header-icons__item">
-                    <img src="./img/user.svg" alt="user">
-                </a>
-                <a href="#" class="header-icons__item">
-                    <img src="./img/bag.svg" alt="bag">
-                </a>
-            </div>
-        </div>
-        <section class="section promo">
-            <div class="container">
-                <div class="promo-text">
-                    <h1 class="promo-text__title">Сохраняйте лучшие моменты своей жизни с камерой моментальной печати Filmax</h1>
-                    <p class="promo-text__desc">Официальный интернет-магазин легендарной фототехники и фото-аксессуаров от британского производителя </p>
-                    <button class="button button-primary promo-text__button">В каталог</button>
+        <div class="container">
+            <div class="header-menu">
+                <a href ="#" class="header-menu__logo"><img src="./img/logotype.svg" alt="Логотип" class="logo"></a>
+                <nav class="nav header-menu__nav">
+                    <a href="#" class="nav__item">Камера</a>
+                    <a href="#" class="nav__item">Принтеры</a>
+                    <a href="#" class="nav__item">Аксессуары</a>
+                    <a href="#" class="nav__item">Поддержка</a>
+                </nav>
+                <div class="header-contacts">
+                    <img src="./img/search.svg" alt="Лупа" class="header-contacts__item">
+                    <img src="./img/user.svg" alt="Пользователь" class="header-contacts__item">
+                    <img src="./img/bag.svg" alt="Сумка" class="header-contacts__item">
                 </div>
-                <div class="promo-photo">
-                    <img src="./img/photos.png" alt="Фото" class="promo-photo__item">
+            </div>
+            <section class="section hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-text__title">Сохраняйте лучшие моменты своей жизни с камерой моментальной печати Filmax</h1>
+                        <p class="hero-text__desc">Официальный интернет-магазин легендарной фототехники и фото-аксеcсуаров от британского производителя </p>
+                        <button class="button button-primary hero-text__button">В каталог</button>
+                    </div>
+                    <div class="hero-img">
+                        <img src="./img/photos.png" alt="Фотографии" class="hero-img__item">
+                    </div>
+                </div>
+            </section>
+            <!-- /.section hero -->
+        </div>
+    </header>
+    <main>
+        <section class="section section-bestsellers">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title__heading">Бестселлеры</h2>
+                    <p class="section-title__subtitle">Смотреть все</p>
+                </div>
+                <div class="section-cards">
+                    <div class="card">
+                        <img src="./img/Group 193.jpg" alt="Фотоаппарат" class="card-img">
+                        <div class="card-desc">
+                            <p class="card-desc__title">Filmax Hello</p>
+                            <span class="card-desc__price">5 900 ₽</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/Group 193 (1).jpg" alt="Фотоаппарат" class="card-img">
+                        <div class="card-desc">
+                            <p class="card-desc__title">Filmax Start</p>
+                            <span class="card-desc__price">6 900 ₽</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/Group 193 (2).jpg" alt="Фотоаппарат" class="card-img">
+                        <div class="card-desc">
+                            <p class="card-desc__title">Filmax Option</p>
+                            <span class="card-desc__price">8 900 ₽</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- /.promo -->
-    </header>
-    <!-- /.header -->
-    <section class="section section-bestsellers">
-        <div class="container">
-            <h2 class="title">Бестселлеры</h2>
-            <p class="desc">Смотреть все</p>
-            <div class="bestsellers-camera">
-                <div class="bestsellers-camera__card">
-                    <img src="./img/Group 193.jpg" alt="Картинка" class="card__img">
-                    <h3 class="title">Filmax Hello</h3>
-                    <span class="price">5 900 ₽</span>
-                </div>
-                <div class="bestsellers-camera__card">
-                    <img src="./img/Group 193 (1).jpg" alt="Картинка" class="card__img">
-                    <h3 class="title">Filmax Start</h3>
-                    <span class="price">6 900 ₽</span>
-                </div>
-                <div class="bestsellers-camera__card">
-                    <img src="./img/Group 193 (2).jpg" alt="Картинка" class="card__img">
-                    <h3 class="title">Filmax Option</h3>
-                    <span class="price">8 900 ₽</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /.bestsellers -->
-    <section class="section section-tape">
+        <!-- /.section section-bestsellers -->
+        <section class="section section-film">
             <div class="container">
-                <h2 class="title">Большой выбор пленки Filmax</h2>
-                <p class="desc">Плёнка Filmax обеспечивает чёткость и контрастность воспроизведения, яркость цвета и естественную передачу тона кожи. Выбирайте разный дизайн для разных событий.</p>
-                <button class="button">В каталог</button>
-            </div>
-    </section>
-    <!-- /.tape -->
-    <section class="section section-product">
-        <div class="container">
-            <div class="section-product__card">
-                <h2 class="title">Filmax Nova 3.0</h2>
-                <span class="star">5.0</span>
-                <h3 class="desc">Камера моментальной печати с 3-дюймовым LCD дисплеем и 15-мегапиксельная матрицей</h3>
-                <div class="colour">
-                    <p class="text"><strong>Цвет</strong></p>
-                </div>
-                <p class="text"><strong>Характеристики</strong></p>
-                <ul>
-                    <li class="text">Размер фотографий, в мм: 62x46</li>
-                    <li class="text">Время печати фотографии, сек: 10</li>
-                    <li class="text">Наличие зума:  Есть</li>
-                    <li class="text">Дисплей:  Есть</li>
-                    <li class="text">Поддержка карт памяти: Есть</li>
-                </ul>
-                </div>
-                <div class="product__bottom">
-                    <span class="price">12 900 ₽</span>
-                    <button class="button">Добавить в корзину</button>
+                <div class="film-content">
+                    <h2 class="film-content__title">Большой выбор пленки Filmax</h2>
+                    <p class="film-content__desc">Плёнка Filmax обеспечивает чёткость и контрастность воспроизведения, яркость цвета и естественную передачу тона кожи. Выбирайте разный дизайн для разных событий.</p>
+                    <button class="button button-primary film-content__button">В каталог</button>
                 </div>
             </div>
-            <div class="product__img">
-                <img src="./img/Group 193 (3).jpg" alt="Фото">
-            </div>
-            <div class="product__block">
-                <div class="product__desc">
-                    <p class="product__desc-text">Описание</p>
-                    <p class="product__desc-text">Характеристики</p>
-                    <p class="product__desc-text">Отзывы</p>
-                </div>
-                <div class="product__text">
-                    <p class="desc">Печатайте и рассматривайте фотографии сразу после съемки с камерой моментальной печати последнего поколения от компании Filmax. Камера имеет автоматический режим экспокоррекции, благодаря которому она определяет яркость окружающего освещения и в соответствии с этими данными выставлять длину выдержки. Filmax Nova 3.0 оснащена автовспышкой, HiKey режимом, макролинзой, функцией мультиэкспозиции.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /.product -->
-    <section class="section__about-us">
-        <div class="container">
-            <div class="about-us__photos">
-                <img src="./img/10.jpg" alt="Фото" class="about-us__photo">
-                <img src="./img/11.jpg" alt="Фото" class="about-us__photo">
-                <img src="./img/12.jpg" alt="Фото" class="about-us__photo">
-            </div>
-            <div class="about-us__text">
-                <h2 class="title">Легендарная фототехника, которая позволит вам увидеть жизнь в новых ярких красках</h2>
-                <p class="desc">Наша жизнь состоит из моментов: моментов, которые могут
-                    изменить вашу жизнь, и повседневных, которые создают вашу жизнь. Поэтому мы создали камеры Filmax, чтобы вы могли прикоснуться к лучшим моментам вашей жизни.</p>
-                <button class="button">Узнать больше</button>
-            </div>
-            <div class="about-us__photos">
-                <img src="./img/13.jpg" alt="Фото" class="about-us__photo">
-                <img src="./img/14.jpg" alt="Фото" class="about-us__photo">
-                <img src="./img/15.jpg" alt="Фото" class="about-us__photo">
-            </div>
-        </div>
-    </section>
-    <!-- /.about-us -->
-    <section class="section__advantages">
-        <div class="container">
-            <div class="advantages__img">
-                <img src="./img/16.jpg" alt="Фото">
-            </div>
-            <div class="advantages__elements">
-                <div class="advantages__text">
-                    <p class="photo__text">Превосходное качество</p>
-                </div>
-                <div class="advantages__text">
-                    <p class="photo__text">Моментальная печать</p>
-                </div>
-                <div class="advantages__text">
-                    <p class="photo__text">Стильный дизайн</p>
-                </div>
-                <div class="advantages__text">
-                    <p class="photo__text">Съемка видео</p>
-                </div>
-                <div class="advantages__text">
-                    <p class="photo__text">Автофокус</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /.advantages -->
-    <section class="section__subscription-form">
-        <div class="container">
-            <div class="enter-form">
-                <div class="enter-form-content">
-                    <h2 class="enter-form__heading">Вступайте в наш клуб</h2>
-                    <p class="enter-form__text">Присоединяйтесь к нашему сообществу и получите специальные условия на покупку любых товаров в интернет-магазине Filmax.</p>
-                    <form action="#" class="enter-form__form">
-                        <div class="form-case form-case--half">
-                            <div class="form-case">
-                                <label for="user-name" class="form-case__label">Имя</label>
-                                <input type="text" name="name" id="user-name" class="form-case__input">
-                            </div>
-                            <div class="form-case">
-                                <label for="user-phone" class="form-case__label">Телефон</label>
-                                <input type="text" name="phone" id="user-phone"class="form-case__input">
-                            </div>
-                        </div>
-                        <div class="form-case form-case--email">
-                            <label for="user-mail" class="form-case__label">E-mail</label>
-                            <input type="email" name="email" id="user-mail"class="form-case__input form-case__input--wide">
-                        </div>
-                        <div class="form-checkcase form-checkcase-first">
-                            <p class="form-checkcase__heading">У вас уже есть камера Filmax?</p>
-                            <div class="form-checkcase-list">
-                                <div class="form-checkcase-radio">
-                                    <input type="radio" name="radio-checking" id="radioNo" class="form-checkcase__input">
-                                    <label for="radioNo" class="form-checkcase__label" value="Нет">Нет</label>
-                                </div>
-                                <div class="form-checkcase-radio">
-                                    <input type="radio" name="radio-checking" id="radioYes" class="form-checkcase__input">
-                                    <label for="radioYes" class="form-checkcase__label" value="Да">Да</label>
-                                </div>
-                                <div class="form-checkcase-radio">
-                                    <input type="radio" name="radio-checking" id="radioPlanning" class="form-checkcase__input">
-                                    <label for="radioPlanning" class="form-checkcase__label" value="Планирую приобрести">Планирую приобрести</label>
+        </section>
+        <!-- /.section section-film-promo -->
+        <section class="section section-product">
+            <div class="container">
+                <div class="section-product__content">
+                    <div class="col-40">
+                        <div class="product">
+                            <div class="product-heading">
+                                <h2 class="product-heading__title">Filmax Nova 3.0</h2>
+                                <div class="product-star">
+                                    <img src="./img/star.svg" alt="Звезда" class="product-star__img">
+                                    <span class="product-star__text">5.0</span>
                                 </div>
                             </div>
+                            <p class="product__desc">Камера моментальной печати с 3-дюймовым LCD дисплеем и 15-мегапиксельная матрицей</p>
+                            <div class="product-color">
+                                <p class="product-color__heading">Цвет</p>
+                                <div class="product-color-items">
+                                    <div class="product-color__item"></div>
+                                    <div class="product-color__item"></div>
+                                    <div class="product-color__item"></div>
+                                </div>
+                            </div>
+                            <div class="product-characteristics">
+                                <p class="product-characteristics__title">Характеристики</p>
+                                <div class="product-characteristics__item">
+                                    <p class="product-characteristics__text">Размер фотографий, в мм:</p>
+                                    <span class="product-characteristics__value">62x46</span>
+                                </div>
+                                <div class="product-characteristics__item">
+                                    <p class="product-characteristics__text">Время печати фотографии, сек:</p>
+                                    <span class="product-characteristics__value">10</span>
+                                </div>
+                                <div class="product-characteristics__item">
+                                    <p class="product-characteristics__text">Наличие зума:</p>
+                                    <span class="product-characteristics__value">Есть</span>
+                                </div>
+                                <div class="product-characteristics__item">
+                                    <p class="product-characteristics__text">Дисплей:</p>
+                                    <span class="product-characteristics__value">Есть</span>
+                                </div>
+                                <div class="product-characteristics__item">
+                                    <p class="product-characteristics__text">Поддержка карт памяти:</p>
+                                    <span class="product-characteristics__value">Есть</span>
+                                </div>
+                            </div>
+                            <div class="product-purchase">
+                                <span class="product-purchase__price">12 900 ₽</span>
+                                <button class="button button-primary product-purchase__button">Добавить в корзину</button>
+                            </div>
                         </div>
-                        <div class="form-checkcase form-checkcase-second">
-                            <input type="checkbox" name="data" id="checkboxData" class="form-checkcase__input form-checkcase__input--checkbox">
-                            <label for="checkboxData" class="form-checkcase__label form-checkcase__label-check">Я согласен на обработку моих данных</label>
-                        </div>
-                        <button type="submit" class="button button-primary enter-form__button">Отправить</button>
-                    </form>
+                    </div>
+                    <div class="col-60">
+                        <img src="./img/Group 193 (3).jpg" alt="Фотоаппарат" class="product-img">
+                    </div>
                 </div>
-                <img src="./img/17.jpg" alt="Фотоаппарат" class="enter-form__img">
+                <div class="product-otherInf">
+                    <div class="col-40">
+                        <p class="product-otherInf__item active">Описание</p>
+                        <p class="product-otherInf__item">Характеристики</p>
+                        <p class="product-otherInf__item">Отзывы</p>
+                    </div>
+                    <div class="col-60">
+                        <p class="product-otherInf__text">Печатайте и рассматривайте фотографии сразу после съемки с камерой моментальной печати последнего поколения от компании Filmax. Камера имеет автоматический режим экспокоррекции, благодаря которому она определяет яркость окружающего освещения и в соответствии с этими данными выставлять длину выдержки. Filmax Nova 3.0 оснащена автовспышкой, HiKey режимом, макролинзой, функцией мультиэкспозиции.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.section section-product -->
+        <section class="section section-learn-more">
+            <div class="container">
+                <div class="learn-more__content">
+                    <div class="learn-more-photos">
+                        <img src="./img/10.jpg" alt="Фотография 'узнать больше'" class="learn-more-photos__item">
+                        <img src="./img/11.jpg" alt="Фотография 'узнать больше'" class="learn-more-photos__item">
+                        <img src="./img/12.jpg" alt="Фотография 'узнать больше'" class="learn-more-photos__item">
+                    </div>
+                    <div class="learn-more-text">
+                        <h2 class="learn-more-text__heading">Легендарная фототехника, которая позволит вам увидеть жизнь в новых ярких красках </h2>
+                        <p class="learn-more-text__desc">Наша жизнь состоит из моментов: моментов, которые могут изменить вашу жизнь, и повседневных, которые создают вашу жизнь. Поэтому мы создали камеры Filmax, чтобы вы могли прикоснуться к лучшим моментам вашей жизни.</p>
+                        <button class="button button-primary learn-more-text__button">Узнать больше</button>
+                    </div>
+                    <div class="learn-more-photos">
+                        <img src="./img/13.jpg" alt="Фотография 'узнать больше'" class="learn-more-photos__item">
+                        <img src="./img/14.jpg" alt="Фотография 'узнать больше'" class="learn-more-photos__item">
+                        <img src="./img/15.jpg" alt="Фотография 'узнать больше'" class="learn-more-photos__item">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.section section-learn-more -->
+        <section class="section section-benefits">
+            <div class="container">
+                <div class="benefits-content">
+                    <img src="./img/16.jpg" alt="Фото 'плюсы'" class="benefits-content__img">
+                    <div class="benefits-content-list">
+                        <div class="benefits-content-list__item">
+                            <img src="./img/photo.svg" alt="Фотоаппарат" class="benefits-content-list__img">
+                            <p class="benefits-content-list__text">Превосходное качество</p>
+                        </div>
+                        <div class="benefits-content-list__item">
+                            <img src="./img/print.svg" alt="Фотоаппарат" class="benefits-content-list__img">
+                            <p class="benefits-content-list__text">Моментальная печать</p>
+                        </div>
+                        <div class="benefits-content-list__item">
+                            <img src="./img/pallete.svg" alt="Фотоаппарат" class="benefits-content-list__img">
+                            <p class="benefits-content-list__text">Стильный дизайн</p>
+                        </div>
+                        <div class="benefits-content-list__item">
+                            <img src="./img/video.svg" alt="Фотоаппарат" class="benefits-content-list__img">
+                            <p class="benefits-content-list__text">Съемка видео</p>
+                        </div>
+                        <div class="benefits-content-list__item">
+                            <img src="./img/focus.svg" alt="Фотоаппарат" class="benefits-content-list__img">
+                            <p class="benefits-content-list__text">Автофокус</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.section section-benefits -->
+        <section class="section section-enter-form">
+            <div class="container">
+                <div class="enter-form">
+                    <div class="enter-form-content">
+                        <h2 class="enter-form__heading">Вступайте в наш клуб</h2>
+                        <p class="enter-form__text">Присоединяйтесь к нашему сообществу и получите специальные условия на покупку любых товаров в интернет-магазине Filmax.</p>
+                        <form action="#" class="enter-form__form">
+                            <div class="form-case form-case--half">
+                                <div class="form-case">
+                                    <label for="user-name" class="form-case__label">Имя</label>
+                                    <input type="text" name="name" id="user-name" class="form-case__input">
+                                </div>
+                                <div class="form-case">
+                                    <label for="user-phone" class="form-case__label">Телефон</label>
+                                    <input type="text" name="phone" id="user-phone"class="form-case__input">
+                                </div>
+                            </div>
+                            <div class="form-case form-case--email">
+                                <label for="user-mail" class="form-case__label">E-mail</label>
+                                <input type="email" name="email" id="user-mail"class="form-case__input form-case__input--wide">
+                            </div>
+                            <div class="form-checkcase form-checkcase-first">
+                                <p class="form-checkcase__heading">У вас уже есть камера Filmax?</p>
+                                <div class="form-checkcase-list">
+                                    <div class="form-checkcase-radio">
+                                        <input type="radio" name="radio-checking" id="radioNo" class="form-checkcase__input">
+                                        <label for="radioNo" class="form-checkcase__label" value="Нет">Нет</label>
+                                    </div>
+                                    <div class="form-checkcase-radio">
+                                        <input type="radio" name="radio-checking" id="radioYes" class="form-checkcase__input">
+                                        <label for="radioYes" class="form-checkcase__label" value="Да">Да</label>
+                                    </div>
+                                    <div class="form-checkcase-radio">
+                                        <input type="radio" name="radio-checking" id="radioPlanning" class="form-checkcase__input">
+                                        <label for="radioPlanning" class="form-checkcase__label" value="Планирую приобрести">Планирую приобрести</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-checkcase form-checkcase-second">
+                                <input type="checkbox" name="data" id="checkboxData" class="form-checkcase__input form-checkcase__input--checkbox">
+                                <label for="checkboxData" class="form-checkcase__label form-checkcase__label-check">Я согласен на обработку моих данных</label>
+                            </div>
+                            <button type="submit" class="button button-primary enter-form__button">Отправить</button>
+                        </form>
+                    </div>
+                    <img src="./img/17.jpg" alt="Фотоаппарат" class="enter-form__img">
+                </div>
+            </div>
+        </section>
+        <!-- /.section section-enter-form -->
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copyright">Filmax © 2022 Все права защищены</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social__link"><img src="./img/facebook.svg" alt="facebook" class="footer-social__img"></a>
+                    <a href="#" class="footer-social__link"><img src="./img/vk.svg" alt="vk" class="footer-social__img"></a>
+                    <a href="#" class="footer-social__link"><img src="./img/instagram.svg" alt="inst" class="footer-social__img"></a>
+                </div>
+                <a href="#" class="footer-confidence">Политика конфиденциальности</a>
             </div>
         </div>
-    </section>
-    <!-- /.signature-form -->
-    <div class="section__footer">
-        <div class="footer__copyright">
-            <div class="copyright__text">Filmax © 2022 Все права защищены</div>   
-        </div>
-        <div class="footer__icons">
-            <a href="#" class="social-icons"><img src="./img/facebook.svg" alt="facebook" class="icons__img"></a>
-            <a href="#" class="social-icons"><img src="./img/vk.svg" alt="vk" class="icons__img"></a>
-            <a href="#" class="social-icons"><img src="./img/instagram.svg" alt="instagram" class="icons__img"></a>
-        </div>
-        <div class="footer__policy">
-            <p class="policy__text">Политика конфиденциальности</p>
-        </div> 
-    </div>
+    </footer>
     <!-- /.footer -->
-</main>
 </body>
 </html>

@@ -3,18 +3,21 @@
   src: url(../fonts/Raleway-Regular.ttf);
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: RalewayMedium;
   src: url(../fonts/Raleway-Medium.ttf);
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: RalewaySemiBold;
   src: url(../fonts/Raleway-SemiBold.ttf);
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -360,87 +363,471 @@ template {
   margin: 0;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 html {
   font-family: RalewayRegular, serif;
-  font-size: 1.125rem;
-  color: #212121;
+  font-size: 1rem;
+  color: #181818;
+  scroll-behavior: smooth;
+}
+
+.col-40 {
+  width: 40%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-60 {
+  width: 60%;
 }
 
 .container {
   max-width: 72.5rem;
   width: 100%;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
 }
 
 a {
-  color: #212121;
+  color: #181818;
   text-decoration: none;
 }
 
 .button {
   border: none;
   font-family: RalewaySemiBold;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   cursor: pointer;
 }
 .button-primary {
-  background: #212121;
+  background: #181818;
   border-radius: 40px;
 }
 
+input {
+  text-indent: 20px;
+}
+
 .header {
+  font-family: RalewayMedium;
+  font-weight: bold;
   background: url("../img/gradient.png") no-repeat center/cover;
+  padding: 1.9375rem 0;
+  font-size: 1.125rem;
 }
-.header-container {
-  padding-top: 2.25rem;
-  align-items: center;
-}
-.header-icons__item {
-  margin-right: 1.5625rem;
-}
-.header-icons__item:last-child {
-  margin-right: 0;
-}
-.header .nav {
+.header-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: RalewayMedium;
-  font-weight: bold;
-  margin-right: 26rem;
+}
+.header-menu__logo {
+  align-items: center;
+}
+.header-contacts__item {
+  cursor: pointer;
+  margin-right: 1.5625rem;
+}
+.header-contacts__item:last-child {
+  margin-right: 0;
+}
+.header .nav {
   margin-bottom: 0.5rem;
+  margin-right: 20rem;
 }
 .header .nav__item {
-  align-items: center;
   margin-right: 1.875rem;
 }
 .header .nav__item:last-child {
   margin-right: 0;
 }
 .header .section {
-  padding: 3.75rem 0 9.0625rem 0;
+  padding: 1.9375rem 0 6.625rem 0;
 }
-.header .promo-text {
-  margin-top: 7rem;
+.header .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.header .promo-text__title {
-  max-width: 41.5625rem;
-  font-size: 46px;
-  line-height: 3.75rem;
+.header .hero-text {
+  margin-top: 9.5rem;
+  margin-right: 10px;
+}
+.header .hero-text__title {
+  max-width: 43rem;
+  font-size: 2.875rem;
+  font-weight: 500;
   letter-spacing: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 2.4375rem;
+}
+.header .hero-text__desc {
+  max-width: 44rem;
+  font-size: 1.375rem;
+  letter-spacing: 1px;
+  line-height: 1.9375rem;
+  margin-bottom: 3rem;
+}
+.header .hero-text__button {
+  padding: 1.075rem 3.3125rem;
+}
+
+.section-bestsellers {
+  padding: 8.125rem 0 8.125rem 0;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.1875rem;
+}
+.section-title__heading {
+  font-size: 2.875rem;
+  font-weight: normal;
+}
+.section-title__subtitle {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #181818;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.section-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.section-cards .card-img {
   margin-bottom: 1.25rem;
 }
-.header .promo-text__desc {
-  max-width: 38rem;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 1.9375rem;
-  letter-spacing: 1px;
-  margin-bottom: 3.125rem;
+.section-cards .card-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.header .promo-text__button {
-  padding: 1rem 3.15rem;
+.section-cards .card-desc__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.section-cards .card-desc__price {
+  font-size: 1.25rem;
+}
+
+.section-film {
+  background: url("../img/8.png") no-repeat center;
+  padding: 9.125rem 0;
+}
+.section-film .film-content__title {
+  max-width: 42.8125rem;
+  font-size: 2.875rem;
+  font-weight: normal;
+  margin-bottom: 1.1875rem;
+}
+.section-film .film-content__desc {
+  max-width: 40.625rem;
+  font-size: 1.375rem;
+  margin-bottom: 3rem;
+}
+.section-film .film-content__button {
+  padding: 1.375rem 3.3125rem;
+}
+
+.section-product {
+  padding: 8.75rem 0;
+}
+.section-product__content {
+  display: flex;
+  justify-content: space-between;
+}
+.section-product .product-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.1875rem;
+}
+.section-product .product-heading__title {
+  font-size: 2.875rem;
+  font-weight: normal;
+}
+.section-product .product-star {
+  display: flex;
+  align-items: center;
+}
+.section-product .product-star__img {
+  margin-right: 0.875rem;
+}
+.section-product .product-star__text {
+  font-family: RalewaySemiBold, serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+.section-product .product__desc {
+  max-width: 20.55rem;
+  font-size: 1.375rem;
+  margin-bottom: 3.0625rem;
+}
+.section-product .product-color__heading {
+  font-family: RalewaySemiBold, serif;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+.section-product .product-color-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4375rem;
+}
+.section-product .product-color__item {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1.0625rem;
+}
+.section-product .product-color__item:nth-of-type(1) {
+  background-color: rgb(238, 105, 54);
+}
+.section-product .product-color__item:nth-of-type(2) {
+  background-color: rgb(220, 208, 193);
+}
+.section-product .product-color__item:nth-of-type(3) {
+  background-color: rgb(178, 190, 200);
+  margin-right: 0;
+}
+.section-product .product-characteristics {
+  margin-bottom: 4.6875rem;
+}
+.section-product .product-characteristics__title {
+  font-family: RalewaySemiBold, serif;
+  font-size: 1.225rem;
+  margin-bottom: 1.5rem;
+  font-weight: bolder;
+}
+.section-product .product-characteristics__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.875rem;
+}
+.section-product .product-characteristics__item:last-child {
+  margin-bottom: 0;
+}
+.section-product .product-purchase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-product .product-purchase__price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section-product .product-purchase__button {
+  padding: 1.3125rem 2.4375rem;
+}
+.section-product .product-img {
+  max-width: 40.1875rem;
+  width: 100%;
+  height: 41.5rem;
+  float: right;
+}
+.section-product .product-otherInf {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5.0625rem;
+}
+.section-product .product-otherInf__item {
+  display: flex;
+  opacity: 0.4;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 2.4375rem;
+}
+.section-product .product-otherInf__item:last-child {
+  margin-bottom: 0;
+}
+.section-product .product-otherInf__text {
+  font-weight: bold;
+  font-size: 1.535rem;
+  max-width: 41rem;
+}
+.section-product .product-otherInf .active {
+  opacity: 1;
+}
+.section-product .product-otherInf .active::before {
+  content: "";
+  width: 42px;
+  height: 2px;
+  background-color: #181818;
+  margin-top: 17px;
+  margin-right: 1.25rem;
+}
+
+.section-learn-more {
+  background: url("../img/gradient.png") no-repeat top/cover;
+  padding: 2.8125rem 0;
+}
+.section .learn-more__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .learn-more-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section .learn-more-photos__item {
+  margin-bottom: 2.5rem;
+}
+.section .learn-more-photos__item:last-child {
+  margin-bottom: 0;
+}
+.section .learn-more-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section .learn-more-text__heading {
+  max-width: 43.125rem;
+  text-align: center;
+  font-size: 2.875rem;
+  margin-bottom: 2.1875rem;
+}
+.section .learn-more-text__desc {
+  max-width: 41.0625rem;
+  text-align: center;
+  font-size: 1.375rem;
+  margin-bottom: 3rem;
+}
+.section .learn-more-text__button {
+  padding: 1.4375rem 2.9375rem;
+}
+
+.section-benefits {
+  padding: 8.6875rem 0 4.75rem;
+}
+.section-benefits .benefits-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-benefits .benefits-content-list {
+  display: flex;
+  flex-direction: column;
+}
+.section-benefits .benefits-content-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.25rem;
+}
+.section-benefits .benefits-content-list__item:last-child {
+  margin-bottom: 0;
+}
+.section-benefits .benefits-content-list__img {
+  margin-right: 1.5rem;
+}
+.section-benefits .benefits-content-list__text {
+  font-size: 1.625rem;
+}
+
+.section-enter-form {
+  background: url("../img/gradient.png") no-repeat top/cover;
+  padding: 8.6875rem 0;
+}
+.section-enter-form .enter-form {
+  display: flex;
+  justify-content: space-between;
+}
+.section-enter-form .enter-form__form {
+  max-width: 28.875rem;
+}
+.section-enter-form .enter-form__heading {
+  max-width: 30.8125rem;
+  font-size: 2.875rem;
+  margin-bottom: 1.5rem;
+}
+.section-enter-form .enter-form__text {
+  max-width: 30.625rem;
+  font-size: 1.375rem;
+  margin-bottom: 4.6875rem;
+}
+.section-enter-form .enter-form__button {
+  padding: 1.25rem 4.3125rem;
+}
+.section-enter-form .form-case {
+  display: flex;
+  flex-direction: column;
+}
+.section-enter-form .form-case--email {
+  margin-bottom: 1.8125rem;
+}
+.section-enter-form .form-case--half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.8125rem;
+}
+.section-enter-form .form-case__label {
+  font-size: 1.125rem;
+  margin-bottom: 0.8125rem;
+}
+.section-enter-form .form-case__input {
+  max-width: 13.625rem;
+  width: 100%;
+  height: 3.375rem;
+}
+.section-enter-form .form-case__input--wide {
+  max-width: 28.875rem;
+  width: 100%;
+}
+.section-enter-form .form-checkcase {
+  font-weight: bold;
+}
+.section-enter-form .form-checkcase-first {
+  margin-bottom: 2.0625rem;
+}
+.section-enter-form .form-checkcase-second {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8125rem;
+}
+.section-enter-form .form-checkcase__heading {
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
+}
+.section-enter-form .form-checkcase-list {
+  display: flex;
+  align-items: center;
+}
+.section-enter-form .form-checkcase-radio {
+  display: flex;
+  align-items: center;
+  margin-right: 1.25rem;
+}
+.section-enter-form .form-checkcase__input {
+  width: 22px;
+  height: 22px;
+  margin-right: 0.6875rem;
+}
+
+.footer {
+  padding: 3.5rem 0;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-social__link {
+  margin-right: 1.25rem;
+}
+.footer-social__link:last-child {
+  margin-right: 0;
+}
+.footer-confidence {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
